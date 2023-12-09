@@ -1,0 +1,10 @@
+
+.container-secao-imagens div{
+    display:flex;
+}
+
+.container-secao-imagens img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}

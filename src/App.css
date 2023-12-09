@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.limitar-secao{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 1024px) {
+
+  .texto-secao-nossos-eventos p,
+  .texto-secao-nossos-sabores p,
+  .texto-secao-sobre-nos p {
+  padding: 0px 50px
+  }
+}
+@media screen and (max-width: 1024px) {
+
+  .texto-secao-nossos-eventos p,
+  .texto-secao-nossos-sabores p,
+  .texto-secao-sobre-nos p {
+  padding: 0px 50px
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 768px){
+
+ .texto-banner h1 {
+   font-size: 60px;
+ }
+
+ .secao-nossos-sabores {
+   flex-direction: column;
+   align-items: center;
+  
+ }
+
+ .secao-nossos-sabores img {
+   width: 100%;
+  
+ }
+
+ .texto-secao-nossos-sabores,
+ .texto-secao-nossos-eventos,
+ .texto-secao-sobre-nos {
+   width: 100%;
+   padding: 40px 10px;
+   text-align: center;
+ }
+
+ .secao-nossos-eventos {
+   flex-direction: column-reverse;
+   align-items: center;
+ }
+
+ .secao-nossos-eventos img {
+   width: 100%;
+ }
+
+ .secao-sobre-nos {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .secao-sobre-nos img {
+   width: 100%;
+ }
+}
+
+@media screen and (max-width: 425px){
+ .texto-banner h1 {
+   font-size: 40px;
+ }
+
+ .texto-secao-nossos-eventos h2,
+ .texto-secao-nossos-sabores h2,
+ .texto-secao-sobre-nos h2 {
+ line-height: 40px;
+ }
+}
+
+/* aqui estilo da pagina sabores */
+
+main{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 768px){
+   .titulo-banner-sabores h1 {
+    font-size: 60px;
+  }
+
+  .box-sorvete{
+    padding: 20px 40px;
+  }
+  .container-sorvetes{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .box-sorvete{
+    width: 100%;
+    margin-bottom: 20px;
+    
+  }
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 425px){
+  .titulo-banner-sabores h1 {
+    font-size: 45px;
   }
 }
+
+/* aqui o estilos da pagina sobre */
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .titulo-banner-sobre h1 {
+    font-size: 60px;
+  }
+
+  .container-secao-imagens div {
+    flex-direction: column;
+  }
+
+  .container-secao-imagens img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 436px){
+  .titulo-banner-sobre h1 {
+    font-size: 40px;
+  }
+}
+
+
+
+

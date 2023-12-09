@@ -1,0 +1,38 @@
+
+.secao-nossos-sabores{
+   display: flex;
+   
+}
+.secao-nossos-sabores img{
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+.texto-secao-nossos-sabores{
+    width: 50%;
+    padding: 100px 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto-secao-nossos-sabores h2{
+    font-size: 35px;
+    line-height: 26px;
+    text-align: center;
+}
+.texto-secao-nossos-sabores span{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.texto-secao-nossos-sabores p{
+   padding: 0 100px;
+   line-height: 26px;
+   margin: 40px 0; 
+   text-align: justify;
+}
